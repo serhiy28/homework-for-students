@@ -13,3 +13,9 @@ function subtract(x, y) {
 }
 
 
+function calculate(x, y, callback) {
+    return callback(x, y);
+}
+
+console.log(calculate(5, 3, add)); // 8
+console.log(calculate(5, 3, subtract)); // 2
